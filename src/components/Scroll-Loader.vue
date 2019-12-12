@@ -71,9 +71,9 @@ export default {
     this.observer.unobserve(this.$el)
   },
   beforeDestroy () {
-    try{
-      this.observer.unobserve(this.$el)
-    } catch(e){}
+     // in $el is freaking null whole app gets crashed
+     if (this.$el === null) return
+     this.observer.unobserve(this.$el)
   }
 }
 </script>
