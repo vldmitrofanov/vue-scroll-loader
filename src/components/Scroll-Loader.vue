@@ -71,7 +71,9 @@ export default {
     this.observer.unobserve(this.$el)
   },
   beforeDestroy () {
-    this.observer.unobserve(this.$el)
+    try{
+      this.observer.unobserve(this.$el)
+    } catch(e){}
   }
 }
 </script>
