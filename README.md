@@ -9,6 +9,13 @@ A scroll loading component for vue.js.
 **[View demo](https://molvqingtai.github.io/vue-scroll-loader/demo.html)**
 
 
+This package has been forked from this nice and skilled developer
+
+**[View the original repo](https://github.com/molvqingtai/vue-scroll-loader)**
+
+The reason I've forked this because there is some bug, which happens on 'beforeDestroy' stage. Not sure, what's the exact problem, but the issue is very annoying. And my solution was just to make this script to ignore the error. Hopefully the author will take an action some day?
+
+
 
 ## Browsers
 
